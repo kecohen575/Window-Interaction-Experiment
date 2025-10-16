@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Window Experiment</title>
+        <style>
+            h1 {
+                text-align: center;
+                color: red;
+            }
+            main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80vh; /* whats the best way to fill the whole window? 100vh goes past */
+                flex-direction: column;
+            }
+            #open-window, #post-window {
+                display: block;
+                margin: 0 auto; /* is this best way to center button? messing with established design... */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello Window Experiment!</h1>
+        <main>
+            <h2 id="indicator">ALONE</h2>
+            <p>Proximity</p>
+        </main>
+        <button type="button" id="open-window">Open Window!</button>
+        <button type="button" id="post-window">Write to Window!</button>
+        <script src="window-experiment.js"></script> <!-- is this the best place for the script? -->
+    </body>
+</html>
